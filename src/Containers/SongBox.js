@@ -6,7 +6,7 @@ class SongBox extends Component{
     constructor(props){
         super(props)
         this.state = {
-            songs: []
+            songs: {}
         }
     }
 
@@ -21,7 +21,7 @@ class SongBox extends Component{
         return(
             <div>
             <h2>Top 20 Chart</h2>
-            <SongList/>
+            <SongList songData={this.state.songs}/>
             </div>
         )
     }

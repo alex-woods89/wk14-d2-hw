@@ -1,10 +1,13 @@
-import React, { Component} from 'react'
+import React from 'react'
 
-class Song extends Component {
+const Song = ({song}) =>{
 
-    render(){
+    {
         return(
-            <p>Song goes here</p>
+            <li>
+            <p>{song.title}</p>
+            <p>{song.artist}</p>
+            </li>
         )
     }
 

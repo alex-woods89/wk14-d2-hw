@@ -1,15 +1,16 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Song from './Song'
 
-class SongList extends Component{
-
-    render(){
-        return(
-            <ol>
-            <Song/>
-            </ol>
-        )
+const SongList =({songData}) => {
+   const 
+    return ( 
+        
+        <Song title ={songData} />
+    )
+    
+  
+    
     }
-}
+
 
 export default SongList
