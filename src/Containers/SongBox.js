@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import SongList from '../Components/SongList'
 
 class SongBox extends Component{
 
@@ -18,7 +19,10 @@ class SongBox extends Component{
 
     render(){
         return(
+            <div>
             <h2>Top 20 Chart</h2>
+            <SongList/>
+            </div>
         )
     }
 }
