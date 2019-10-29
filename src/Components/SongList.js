@@ -1,16 +1,16 @@
-import React from 'react'
+import React,{Component} from 'react'
 import Song from './Song'
 
-const SongList =({songData}) => {
-   const 
-    return ( 
+class SongList extends Component {
+   constructor(props){
+       super(props)
+   }
+
+   render(){
+       const songTitle = this.props.songData.feed.entry["im:collection"]["im:name"].label;
         
-        <Song title ={songData} />
-    )
-    
-  
-    
-    }
+     return  <p>{songTitle}</p>
+   }
 
-
+}
 export default SongList
